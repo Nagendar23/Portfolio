@@ -1,178 +1,135 @@
-# Portfolio Website
+# **Nagendar Varkala – Portfolio Website**
+A modern, high-performance developer portfolio built with Next.js 14, showcasing my skills, projects, and achievements with smooth animations and a clean UI.
 
-A modern, performant portfolio website built with Next.js 14, featuring interactive demos, achievements system, and beautiful animations.
+# *✨ Features*
+Modern Stack – Next.js 14 with App Router, TypeScript, Tailwind CSS
 
-## ✨ Features
+Project Showcase – Detailed project cards with live links and GitHub repos
 
-- **Modern Stack**: Next.js 14 with App Router, TypeScript, Tailwind CSS
-- **Interactive Demos**: Live code examples with Sandpack integration
-- **Achievements System**: Gamified user experience with localStorage persistence
-- **Contact Form**: Web3Forms integration (no backend required)
-- **Theme Support**: Light/dark mode with system preference detection
-- **Performance**: Optimized for Lighthouse scores 95+
-- **Accessibility**: Full keyboard navigation, ARIA labels, screen reader support
-- **SEO**: Complete meta tags, OpenGraph, sitemap generation
-- **Animations**: Smooth micro-interactions with Framer Motion
+Achievements System – Gamified experience stored in localStorage
 
-## 🚀 Quick Start
+Contact Form – Integrated with Web3Forms (no backend required)
 
-\`\`\`bash
-# Install dependencies
+Theme Support – Light/Dark mode with system preference detection
+
+Performance – Optimized for 95+ Lighthouse scores
+
+Accessibility – Full keyboard navigation, ARIA labels, screen reader support
+
+SEO Ready – Meta tags, OpenGraph, sitemap generation
+
+Animations – Framer Motion micro-interactions
+
+# **🚀 Quick Start**
+
+ Install dependencies : 
 pnpm install
 
-# Start development server
+ Start development server : 
 pnpm dev
 
-# Build for production
-pnpm build
-\`\`\`
+ Build for production : 
+ pnpm build
 
-## 🔧 Environment Setup
+#**📁 Project Structure**
 
-Create a `.env.local` file:
+├── app/                # Next.js App Router pages
+├── components/         # Reusable UI components
+├── lib/                # Utilities and configurations
+├── public/             # Static assets (images, resume)
+├── styles/             # Global styles
+📝 Content Management
+Projects
+Add your projects in lib/projects.ts and store screenshots in public/images/projects/.
 
-\`\`\`env
-NEXT_PUBLIC_SITE_URL=https://yourportfolio.com
-NEXT_PUBLIC_WEB3FORMS_KEY=your-web3forms-access-key
-PLAUSIBLE_DOMAIN=yourportfolio.com
-\`\`\`
+# **📌 Featured Projects**
+1. Expense Tracker
+Summary: Full-stack expense management app with budget analysis and visualizations.
+Tech: React, Node.js, Express.js, MongoDB, JWT, Chart.js
+Repo: GitHub
+Date: 2025-05-13
 
-## 📁 Project Structure
+2. Airbnb Clone
+Summary: Accommodation booking app with geolocation and maps API.
+Tech: EJS, Express.js, MongoDB, JWT, Maps API
+Repo: GitHub
+Live: View Site
+Date: 2025-04-25
 
-\`\`\`
-├── app/                    # Next.js App Router pages
-├── components/             # Reusable UI components
-├── lib/                    # Utilities and configurations
-├── content/                # MDX content and data
-├── public/                 # Static assets
-└── styles/                 # Global styles
-\`\`\`
+3. Notes Application
+Summary: Secure notes app with tagging, full-text search, and theming.
+Tech: React, Node.js, MongoDB, JWT
+Repo: GitHub
+Date: 2024-05-03
 
-## 📝 Content Management
+4. To-Do App
+Summary: Task management app with CRUD operations and responsive design.
+Tech: React, Node.js, Express.js, MongoDB, JWT
+Repo: GitHub
+Date: 2025-04-27
 
-### Adding Projects
+5. Landing Page
+Summary: A modern, responsive landing page built with React.js.
+Tech: React.js
+Repo: GitHub
+Live: View Site
+Date: 2025-04-02
 
-1. Add project data to `lib/projects.ts`
-2. Create project images in `public/images/projects/`
-3. Optionally create detailed case study pages
+6. QR Code Generator
+Summary: Customizable QR code generator with history and scanner features.
+Tech: React, QRCode.js
+Repo: GitHub
+Live: View Site
+Date: 2025-03-15
 
-### Updating Resume
+# **🎮 Achievements**
+First Visit – Welcome badge
 
-1. Edit `public/resume.pdf` for the downloadable version
-2. Update resume data in `app/resume/page.tsx`
-3. Or create `content/data/resume.json` for structured data
+Explorer – Viewed projects section
 
-### Blog Posts
+Night Owl – Switched to dark mode
 
-Create MDX files in `content/blog/` with frontmatter:
+Communicator – Sent a message via contact form
 
-\`\`\`mdx
----
-title: "Post Title"
-date: "2024-01-15"
-summary: "Brief description"
-tags: ["tag1", "tag2"]
----
+🎨 Customization
+Colors & Themes – Edit tailwind.config.ts
 
-Your content here...
-\`\`\`
+Fonts – Inter, Fraunces, JetBrains Mono
 
-## 🎮 Achievements System
+Animations – Customize with Framer Motion configs
 
-The site includes a gamification layer with achievements:
+📊 Analytics
+Vercel Analytics (default)
 
-- **First Visit**: Welcome new visitors
-- **Explorer**: View projects section
-- **Night Owl**: Switch to dark mode
-- **Communicator**: Send contact form
-- **Konami**: Easter egg (↑↑↓↓←→←→BA)
+Plausible Analytics
 
-Achievements are stored in localStorage and persist across sessions.
+🧪 Testing
 
-## 🎨 Customization
-
-### Colors & Themes
-
-Edit `tailwind.config.ts` and `app/globals.css` for color schemes.
-
-### Typography
-
-The site uses:
-- **Sans**: Inter (system fallback)
-- **Mono**: JetBrains Mono
-- **Display**: Fraunces (Google Fonts)
-
-### Animations
-
-Customize animations in `tailwind.config.ts` and component-level Framer Motion configs.
-
-## 📊 Analytics
-
-The site supports multiple analytics providers:
-
-- **Vercel Analytics** (default)
-- **Plausible** (privacy-focused)
-- **PostHog** (product analytics)
-
-Configure via environment variables.
-
-## 🧪 Testing
-
-\`\`\`bash
 # Unit tests
 pnpm test
 
-# E2E tests
+# End-to-End tests
 pnpm test:e2e
+🚀 Deployment
+Recommended: Vercel
 
-# E2E with UI
-pnpm test:e2e:ui
-\`\`\`
+Connect GitHub repo
 
-## 🚀 Deployment
+Add environment variables
 
-### Vercel (Recommended)
+Deploy
 
-1. Connect your GitHub repository
-2. Set environment variables
-3. Deploy automatically on push
+Other platforms: Netlify, Railway, AWS Amplify.
 
-### Other Platforms
+📈 Performance
+Optimized Core Web Vitals
 
-The site is a standard Next.js application and can be deployed to:
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
+Lighthouse Score: 95+
 
-## 📈 Performance
+Next.js image optimization
 
-The site is optimized for:
-- **Core Web Vitals**: LCP, FID, CLS
-- **Lighthouse Score**: 95+ on desktop
-- **Bundle Size**: Optimized with code splitting
-- **Images**: Next.js Image optimization
-- **Fonts**: Variable fonts with display swap
+Code splitting for faster loads
 
-## 🔒 Security
 
-- CSP headers configured
-- XSS protection enabled
-- CSRF protection on forms
-- Secure headers via Next.js
+Built with ❤️ by Nagendar Varkala
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
-
-## 📄 License
-
-MIT License - feel free to use this as a template for your own portfolio!
-
----
-
-Built with ❤️ using Next.js, TypeScript, and Tailwind CSS.
