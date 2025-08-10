@@ -61,7 +61,7 @@ export function ContactForm() {
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          from_name: "Alex Chen Portfolio",
+          from_name: "Nagendar Varkala Portfolio",
         }),
       })
 

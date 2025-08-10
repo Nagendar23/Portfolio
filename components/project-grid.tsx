@@ -6,7 +6,7 @@ import { ProjectCard } from "@/components/project-card"
 import { Button } from "@/components/ui/button"
 import { getProjects } from "@/lib/projects"
 
-const allTags = ["All", "Web", "Mobile", "AI", "Design System", "Tool"]
+const allTags = ["All", "Web", "Mobile", "AI", "ML", "Tool"]
 
 export function ProjectGrid() {
   const [selectedTag, setSelectedTag] = useState("All")

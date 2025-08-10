@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: "Alex Chen",
+  name: "Nagendar Varkala",
   description: "Full-stack developer passionate about creating beautiful, performant, and accessible web applications.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://alexchen.dev",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://nagendar.dev",
   ogImage: "/og-image.png",
   keywords: [
-    "Alex Chen",
+    "Nagendar Varkala",
     "Full Stack Developer",
     "React",
     "Next.js",
@@ -15,14 +15,13 @@ export const siteConfig = {
     "Portfolio",
   ],
   author: {
-    name: "Alex Chen",
-    url: "https://alexchen.dev",
-    email: "alex@example.com",
-    twitter: "@alexchen",
+    name: "Nagendar Varkala",
+    email: "varkalanagendar777@gmail.com",
+    
   },
   links: {
-    twitter: "https://twitter.com/alexchen",
-    github: "https://github.com/alexchen",
-    linkedin: "https://linkedin.com/in/alexchen",
+    
+    github: "https://github.com/Nagendar23",
+    linkedin: "https://www.linkedin.com/in/nagendar-varkala/",
   },
 }

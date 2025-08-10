@@ -12,39 +12,57 @@ export const metadata: Metadata = {
 }
 
 const resumeData = {
-  lastUpdated: "2024-01-15",
+  lastUpdated: "2025-06-06",
   experience: [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Inc.",
-      period: "2022 - Present",
-      description: "Lead development of scalable web applications using React, Node.js, and cloud technologies.",
+      title: "Full Stack Developer",
+      company: "Freelance / Personal Projects",
+      period: "2024 - Present",
+      description: "Developed and deployed responsive, scalable web applications using the MERN stack and Next.js.",
       achievements: [
-        "Improved application performance by 40%",
-        "Led team of 5 developers",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
+        "Built responsive web apps with 30%+ performance improvements",
+        "Implemented secure JWT authentication supporting 100+ concurrent users",
+        "Deployed projects on Vercel, Netlify, and Render with CI/CD workflows",
       ],
     },
     {
       title: "Frontend Developer",
-      company: "StartupXYZ",
-      period: "2020 - 2022",
-      description: "Developed responsive web applications and component libraries.",
+      company: "College Projects & Hackathons",
+      period: "2023 - 2024",
+      description: "Designed and implemented modern, responsive UIs with React.js, Tailwind CSS, and JavaScript.",
       achievements: [
-        "Built design system used across 10+ products",
-        "Reduced bundle size by 30%",
-        "Mentored junior developers",
+        "Won recognition for most user-friendly interface design in a college competition (2025)",
+        "Created reusable component libraries for faster project delivery",
+        "Mentored peers in React.js and full-stack development",
       ],
     },
   ],
   education: [
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of California, Berkeley",
-      period: "2016 - 2020",
+      degree: "B.Tech in Artificial Intelligence & Data Science",
+      school: "Sri Indu College of Engineering & Technology, Hyderabad",
+      period: "2022 – Present",
+    },
+    {
+      degree: "Intermediate (MPC)",
+      school: "Sri Chaitanya Junior College, Hyderabad",
+      period: "2020 – 2022",
+    },
+    {
+      degree: "High School",
+      school: "Dilsukhnagar Public School, Hyderabad",
+      period: "Completed 2020",
     },
   ],
-  skills: ["JavaScript/TypeScript", "React/Next.js", "Node.js", "Python", "PostgreSQL", "AWS", "Docker", "GraphQL"],
+  skills: [
+    "React.js", "Next.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", "Vite",
+    "Node.js", "Express.js", "RESTful API Design", "JWT Authentication", "API Integration",
+    "MongoDB", "SQL", "NoSQL", "Database Design", "Data Modeling", "CRUD Operations",
+    "Git", "GitHub", "Docker (Basics)", "CI/CD", "Vercel", "Netlify", "Render",
+    "Python", "Java (Basics)", "C (Basics)",
+    "Agile", "Scrum", "Test-Driven Development", "MVC Architecture",
+    "Problem-Solving", "Collaborative Teamwork", "Technical Communication", "Time Management"
+  ],
 }
 
 export default function ResumePage() {

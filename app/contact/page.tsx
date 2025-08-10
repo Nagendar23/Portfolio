@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch to discuss your next project or just say hello.",
+  description: "Get in touch to discuss your next project.",
 }
 
 export default function ContactPage() {
@@ -34,7 +34,17 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-primary" />
                   <h3 className="font-semibold">Email</h3>
                 </div>
-                <p className="text-muted-foreground">alex@example.com</p>
+                <p className="text-muted-foreground">varkalanagendar@gmail.com</p>
+              </CardContent>
+            </Card>
+
+    <Card>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Clock className="h-5 w-5 text-primary" />
+                  <h3 className="font-semibold">Response Time</h3>
+                </div>
+                <p className="text-muted-foreground">Usually within 24 hours</p>
               </CardContent>
             </Card>
 
@@ -44,19 +54,11 @@ export default function ContactPage() {
                   <MapPin className="h-5 w-5 text-primary" />
                   <h3 className="font-semibold">Location</h3>
                 </div>
-                <p className="text-muted-foreground">San Francisco, CA</p>
+                <p className="text-muted-foreground">Hyderabad, India</p>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Clock className="h-5 w-5 text-primary" />
-                  <h3 className="font-semibold">Response Time</h3>
-                </div>
-                <p className="text-muted-foreground">Usually within 24 hours</p>
-              </CardContent>
-            </Card>
+
           </div>
         </div>
       </Section>

@@ -43,7 +43,7 @@ export function Header() {
     >
       <div className="container flex h-14 sm:h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2 font-display text-lg sm:text-xl font-bold group">
-          <span className="gradient-text group-hover:scale-105 transition-transform duration-300">Alex Chen</span>
+          <span className="gradient-text group-hover:scale-105 transition-transform duration-300">Nagendar Varkala</span>
         </Link>
 
         {/* Desktop Navigation */}

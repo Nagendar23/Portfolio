@@ -46,7 +46,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm font-medium"
             >
               <Sparkles className="h-4 w-4 text-primary" />
-              <span>Available for new projects</span>
+              <span>Available for new projects & internships</span>
             </motion.div>
 
             <motion.h1
@@ -127,8 +127,7 @@ export function Hero() {
             >
               <p className="flex items-center justify-center gap-2">
                 <span>Scroll to discover more</span>
-                <span className="text-primary">•</span>
-                <span>Try the Konami code for a surprise 🎉</span>
+                
               </p>
             </motion.div>
           </motion.div>

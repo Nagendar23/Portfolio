@@ -1,40 +1,41 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Star, Users, Code, Coffee } from "lucide-react"
+import { Star, Users, Code, Coffee, BookOpen, Cpu, Target, Award, Zap,  } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Section } from "@/components/section"
 import { cn } from "@/lib/utils"
 
 const stats = [
   {
-    icon: Code,
-    value: "50+",
+    icon: Zap,
+    value: "10+",
     label: "Projects Completed",
     color: "text-blue-600",
     bgColor: "bg-blue-500/10",
   },
+    {
+    icon: Code,
+    value: "15+",
+    label: "Technologies Mastered",
+    color: "text-orange-600",
+    bgColor: "bg-orange-500/10",
+  },
   {
-    icon: Users,
-    value: "25+",
-    label: "Happy Clients",
+    icon: Target,
+    value: "NA",
+    label: "Coding Challenges Solved",
     color: "text-emerald-600",
     bgColor: "bg-emerald-500/10",
   },
   {
-    icon: Star,
-    value: "4.9",
-    label: "Average Rating",
+    icon: BookOpen,
+    value: "84+",
+    label: "Contributions",
     color: "text-amber-600",
     bgColor: "bg-amber-500/10",
   },
-  {
-    icon: Coffee,
-    value: "1000+",
-    label: "Cups of Coffee",
-    color: "text-orange-600",
-    bgColor: "bg-orange-500/10",
-  },
+
 ]
 
 export function SocialProof() {

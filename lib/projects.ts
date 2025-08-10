@@ -1,104 +1,107 @@
 export interface Project {
-  slug: string
-  title: string
-  summary: string
-  description: string
-  tags: string[]
-  tech: string[]
-  cover: string
-  repo?: string
-  url?: string
-  featured: boolean
-  date: string
+  slug: string;
+  title: string;
+  summary: string;
+  description: string;
+  tags: string[];
+  tech: string[];
+  cover: string;
+  repo?: string;
+  url?: string;
+  featured: boolean;
+  date: string;
 }
 
 export function getProjects(): Project[] {
   return [
     {
-      slug: "ai-chat-platform",
-      title: "AI Chat Platform",
-      summary: "Real-time chat application with AI-powered responses and sentiment analysis.",
+      slug: "expense-tracker",
+      title: "Expense Tracker",
+      summary:
+        "Full-stack expense management app with budget analysis and visualizations.",
       description:
-        "A comprehensive chat platform built with Next.js and WebSocket technology, featuring AI-powered responses, real-time sentiment analysis, and advanced moderation tools.",
-      tags: ["web", "ai", "real-time"],
-      tech: ["Next.js", "TypeScript", "WebSocket", "OpenAI", "Prisma", "PostgreSQL"],
-      cover: "/placeholder.svg?height=240&width=400&text=AI+Chat+Platform",
-      repo: "https://github.com/alexchen/ai-chat-platform",
-      url: "https://ai-chat-demo.vercel.app",
+        "A responsive MERN stack expense manager with JWT-based authentication, categorized expense tracking, and data visualization charts for better financial insights. Achieved 99.9% uptime and 60% faster budget analysis.",
+      tags: ["web", "full-stack", "finance"],
+      tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Chart.js"],
+      cover: "/images/projects/expense-tracker.png",
+      repo: "https://github.com/Nagendar23/Expense-Tracker",
       featured: true,
-      date: "2024-01-15",
+      date: "2025-05-13",
     },
     {
-      slug: "design-system",
-      title: "Component Design System",
-      summary: "Comprehensive design system with 50+ components, documentation, and Figma integration.",
+      slug: "airbnb-clone",
+      title: "Airbnb Clone",
+      summary: "Accommodation booking app with geolocation and maps API.",
       description:
-        "A complete design system built from the ground up, featuring accessible components, comprehensive documentation, and seamless Figma integration for design-to-code workflows.",
-      tags: ["design system", "web", "tool"],
-      tech: ["React", "TypeScript", "Storybook", "Tailwind CSS", "Figma API"],
-      cover: "/placeholder.svg?height=240&width=400&text=Design+System",
-      repo: "https://github.com/alexchen/design-system",
-      url: "https://design-system-demo.vercel.app",
+        "A responsive Airbnb-like web application with JWT authentication, CRUD operations, RESTful APIs, geolocation, and maps integration. Improved performance by 40% through frontend and backend optimization.",
+      tags: ["web", "full-stack", "booking"],
+      tech: ["EJS", "Express.js", "MongoDB", "JWT", "Maps API"],
+      cover: "/images/projects/airBnb.png",      
+      repo: "https://github.com/Nagendar23/Air-Bnb",
+      url: "https://air-bnb-fnxw.onrender.com/listings",
       featured: true,
-      date: "2023-11-20",
+      date: "2025-04-25",
     },
     {
-      slug: "mobile-fitness-app",
-      title: "Fitness Tracking App",
-      summary: "Cross-platform mobile app for workout tracking with social features and AI coaching.",
+      slug: "notes-app",
+      title: "Notes Application",
+      summary: "Secure notes app with tagging, full-text search, and theming.",
       description:
-        "A React Native fitness application with workout tracking, social features, AI-powered coaching recommendations, and integration with popular fitness devices.",
-      tags: ["mobile", "ai", "health"],
-      tech: ["React Native", "Expo", "TypeScript", "Firebase", "TensorFlow Lite"],
-      cover: "/placeholder.svg?height=240&width=400&text=Fitness+App",
-      repo: "https://github.com/alexchen/fitness-app",
-      featured: true,
-      date: "2023-09-10",
-    },
-    {
-      slug: "data-visualization-tool",
-      title: "Data Visualization Dashboard",
-      summary: "Interactive dashboard for complex data visualization with real-time updates.",
-      description:
-        "A powerful data visualization tool built with D3.js and React, featuring interactive charts, real-time data streaming, and customizable dashboard layouts.",
-      tags: ["web", "tool", "data"],
-      tech: ["React", "D3.js", "TypeScript", "WebSocket", "Node.js"],
-      cover: "/placeholder.svg?height=240&width=400&text=Data+Viz+Dashboard",
-      repo: "https://github.com/alexchen/data-viz-tool",
-      url: "https://data-viz-demo.vercel.app",
+        "A secure notes management app with JWT authentication, role-based access, tagging, full-text search, and theming options. Optimized state management improved response time by 45%.",
+      tags: ["web", "full-stack", "productivity"],
+      tech: ["React", "Node.js", "MongoDB", "JWT"],
+      cover: "/images/projects/notes-app.png",
+      repo: "https://github.com/Nagendar23/notes-app",
       featured: false,
-      date: "2023-07-05",
+      date: "2024-05-03",
     },
     {
-      slug: "e-commerce-platform",
-      title: "E-commerce Platform",
-      summary: "Full-stack e-commerce solution with payment processing and inventory management.",
+      slug: "todo-app",
+      title: "To-Do App",
+      summary:
+        "Task management app with CRUD operations and responsive design.",
       description:
-        "A complete e-commerce platform featuring product management, secure payment processing, inventory tracking, and customer analytics.",
-      tags: ["web", "e-commerce", "full-stack"],
-      tech: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-      cover: "/placeholder.svg?height=240&width=400&text=E-commerce+Platform",
-      repo: "https://github.com/alexchen/ecommerce-platform",
+        "A MERN stack to-do list application that allows users to add, edit, delete, and mark tasks as complete. Includes JWT authentication, MongoDB database integration, and a responsive UI for both desktop and mobile devices.",
+      tags: ["web", "productivity", "full-stack"],
+      tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
+      cover: "/images/projects/ToDo-App.png",
+      repo: "https://github.com/Nagendar23/ToDo-App",
       featured: false,
-      date: "2023-05-15",
+      date: "2025-04-27",
+    },
+
+    {
+      slug: "landing-page",
+      title: "Landing Page",
+      summary: "A modern, responsive landing page built with React.js.",
+      description:
+        "A visually appealing and responsive landing page built using React.js, optimized for performance and user engagement. Includes smooth animations, reusable components, and mobile-friendly layouts.",
+      tags: ["web", "ui"],
+      tech: ["React.js"],
+      cover: "/images/projects/landing-page.png",
+      repo: "https://github.com/Nagendar23/landing-page",
+      url: "https://landing-page-cyan-eight.vercel.app/",
+      featured: false,
+      date: "2025-04-02",
     },
     {
-      slug: "code-collaboration-tool",
-      title: "Code Collaboration Tool",
-      summary: "Real-time collaborative code editor with video chat and project management.",
+      slug: "qr-code-generator",
+      title: "QR Code Generator",
+      summary:
+        "Customizable QR code generator with history and scanner features.",
       description:
-        "A collaborative development environment featuring real-time code editing, integrated video chat, project management tools, and version control integration.",
-      tags: ["web", "tool", "collaboration"],
-      tech: ["React", "WebRTC", "Socket.io", "Monaco Editor", "Node.js"],
-      cover: "/placeholder.svg?height=240&width=400&text=Code+Collab+Tool",
-      repo: "https://github.com/alexchen/code-collab-tool",
-      url: "https://code-collab-demo.vercel.app",
+        "A React-based QR code generator with download option, dark/light mode, custom size, error correction levels, save history, and optional QR scanner functionality.",
+      tags: ["web", "tool"],
+      tech: ["React", "QRCode.js"],
+      cover: "/images/projects/qr-generator.png",
+      repo: "https://github.com/Nagendar23/QR-Generator",
+      url: "https://nagendar-qr.vercel.app/",
       featured: false,
-      date: "2023-03-20",
+      date: "2025-03-15",
     },
-  ]
+  ];
 }
 
 export function getProject(slug: string): Project | undefined {
-  return getProjects().find((project) => project.slug === slug)
+  return getProjects().find((project) => project.slug === slug);
 }
