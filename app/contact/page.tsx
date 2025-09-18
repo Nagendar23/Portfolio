@@ -34,7 +34,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-primary" />
                   <h3 className="font-semibold">Email</h3>
                 </div>
-                <p className="text-muted-foreground">varkalanagendar@gmail.com</p>
+                <p className="text-muted-foreground">varkalanagendar777@gmail.com</p>
               </CardContent>
             </Card>
 
