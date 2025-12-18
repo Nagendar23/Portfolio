@@ -50,7 +50,7 @@ export function getProjects(): Project[] {
         "A full stack web application enabling high-quality video conferencing with screen sharing, built using the MERN stack. Implemented WebRTC for real-time media streaming and WebSockets for signaling and instant communication, allowing multiple users to join rooms, share screens, and communicate seamlessly.",
       tags: ["web", "full-stack", "Video Conferencing", "Collaboration App"],
       tech: ["React", "Express.js","Node.js", "MongoDB", "WebRTC","WebSockets"],
-      cover: "/images/projects/VideoMeetZ.png",
+      cover: "/images/projects/VideoMeetz.png",
       repo: "https://github.com/Nagendar23/VideoConferenceApp/",
       featured: true,
       date: "2024-09-10",
