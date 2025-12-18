@@ -15,6 +15,48 @@ export interface Project {
 export function getProjects(): Project[] {
   return [
     {
+      slug: "Campus-Connect",
+      title: "Campus-Connect",
+      summary:
+        "Campus Connect is a full-stack platform for creating, managing, and attending campus events with secure roles, QR tickets, and real-time attendance tracking.",
+      description:
+        "Campus Connect is a full-stack campus event management platform that allows organizers to create and manage events while enabling students to discover, register, and access QR-based digital tickets. It supports secure role-based access, real-time attendance tracking, and a complete end-to-end campus event workflow.",
+      tags: ["web", "Full-Stack", "Event Management"],
+      tech: ["Next.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+      cover: "images/projects/campus-connect.png",
+      repo: "https://github.com/Nagendar23/Campus-Connect",
+      featured: true,
+      date: "2025-09-28",
+    },
+    {
+      slug: "airbnb-clone",
+      title: "Airbnb Clone",
+      summary: "Accommodation booking app with geolocation and maps API.",
+      description:
+        "A responsive Airbnb-like web application with JWT authentication, CRUD operations, RESTful APIs, geolocation, and maps integration. Improved performance by 40% through frontend and backend optimization.",
+      tags: ["web", "Backend", "Booking"],
+      tech: ["EJS", "Express.js", "MongoDB", "JWT", "Maps API"],
+      cover: "/images/projects/airBnb.png",      
+      repo: "https://github.com/Nagendar23/Air-Bnb",
+      url: "https://air-bnb-fnxw.onrender.com/listings",
+      featured: true,
+      date: "2025-04-25",
+    },
+    {
+      slug: "VideoMeetZ",
+      title: "VideoMeetZ",
+      summary: "A MERN-based web app offering high-quality video conferencing with real-time WebRTC streaming, screen sharing, and seamless multi-user communication via WebSockets.",
+      description:
+        "A full stack web application enabling high-quality video conferencing with screen sharing, built using the MERN stack. Implemented WebRTC for real-time media streaming and WebSockets for signaling and instant communication, allowing multiple users to join rooms, share screens, and communicate seamlessly.",
+      tags: ["web", "full-stack", "Video Conferencing", "Collaboration App"],
+      tech: ["React", "Express.js","Node.js", "MongoDB", "WebRTC","WebSockets"],
+      cover: "/images/projects/VideoMeetZ.png",
+      repo: "https://github.com/Nagendar23/VideoConferenceApp/",
+      featured: true,
+      date: "2024-09-10",
+    },
+
+        {
       slug: "expense-tracker",
       title: "Expense Tracker",
       summary:
@@ -28,21 +70,7 @@ export function getProjects(): Project[] {
       featured: true,
       date: "2025-05-13",
     },
-    {
-      slug: "airbnb-clone",
-      title: "Airbnb Clone",
-      summary: "Accommodation booking app with geolocation and maps API.",
-      description:
-        "A responsive Airbnb-like web application with JWT authentication, CRUD operations, RESTful APIs, geolocation, and maps integration. Improved performance by 40% through frontend and backend optimization.",
-      tags: ["web", "full-stack", "booking"],
-      tech: ["EJS", "Express.js", "MongoDB", "JWT", "Maps API"],
-      cover: "/images/projects/airBnb.png",      
-      repo: "https://github.com/Nagendar23/Air-Bnb",
-      url: "https://air-bnb-fnxw.onrender.com/listings",
-      featured: true,
-      date: "2025-04-25",
-    },
-    {
+        {
       slug: "notes-app",
       title: "Notes Application",
       summary: "Secure notes app with tagging, full-text search, and theming.",
@@ -70,35 +98,6 @@ export function getProjects(): Project[] {
       date: "2025-04-27",
     },
 
-    {
-      slug: "landing-page",
-      title: "Landing Page",
-      summary: "A modern, responsive landing page built with React.js.",
-      description:
-        "A visually appealing and responsive landing page built using React.js, optimized for performance and user engagement. Includes smooth animations, reusable components, and mobile-friendly layouts.",
-      tags: ["web", "ui"],
-      tech: ["React.js"],
-      cover: "/images/projects/landing-page.png",
-      repo: "https://github.com/Nagendar23/landing-page",
-      url: "https://landing-page-cyan-eight.vercel.app/",
-      featured: false,
-      date: "2025-04-02",
-    },
-    {
-      slug: "qr-code-generator",
-      title: "QR Code Generator",
-      summary:
-        "Customizable QR code generator with history and scanner features.",
-      description:
-        "A React-based QR code generator with download option, dark/light mode, custom size, error correction levels, save history, and optional QR scanner functionality.",
-      tags: ["web", "tool"],
-      tech: ["React", "QRCode.js"],
-      cover: "/images/projects/qr-generator.png",
-      repo: "https://github.com/Nagendar23/QR-Generator",
-      url: "https://nagendar-qr.vercel.app/",
-      featured: false,
-      date: "2025-03-15",
-    },
   ];
 }
 

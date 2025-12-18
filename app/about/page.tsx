@@ -37,29 +37,24 @@ const principles = [
 const timeline = [
   {
     year: "2025",
-    title: "Recognized for UI Excellence",
+    title: "Full Stack Intern – InnoRize Enterprises",
     description:
-      "Won most user-friendly interface design award in a college web development competition.",
+      "Worked on backend and frontend development using MERN stack and Next.js, building user and admin modules, integrating REST APIs, improving SEO to a score of 100, and collaborating with teams using Git and GitHub.",
+  },
+  {
+    year: "2025",
+    title: "Exploring AI, ML & Data Science",
+    description:
+      "Hands-on learning in Data Science and AI using Python, statistics, NumPy, Pandas, Scikit-learn, NLP techniques, and visualization tools like Power BI, while experimenting with projects.",
   },
   {
     year: "2024",
-    title: "Full Stack Developer (Freelance & Personal Projects)",
+    title: "Full Stack Projects & Hackathons",
     description:
-      "Built and deployed multiple MERN stack and Next.js projects with secure authentication and CI/CD workflows.",
-  },
-  {
-    year: "2024",
-    title: "Frontend Developer (Projects & Hackathons)",
-    description:
-      "Developed responsive UI components using React.js, Tailwind CSS, and JavaScript.",
-  },
-  {
-    year: "2020",
-    title: "Completed High School",
-    description:
-      "Graduated from Dilsukhnagar Public School with a CGPA of 10.0.",
+      "Built and deployed multiple personal and hackathon projects using MERN stack and Next.js, focusing on responsive UI, authentication, and scalable application design.",
   },
 ];
+
 
 export default function AboutPage() {
   return (
@@ -84,25 +79,10 @@ export default function AboutPage() {
                 </h2>
                 <div className="prose prose-neutral dark:prose-invert max-w-none">
                   <p>
-                    I'm a Full Stack Developer from Hyderabad with expertise in
-                    React.js, Next.js, Node.js, and MongoDB (MERN stack). My
-                    journey began with a deep curiosity about how web
-                    applications work, which eventually grew into a passion for
-                    building scalable, high-performance digital solutions.
+                    👋 Hello! I’m <b>Nagendar Varkala</b>, a passionate <b>Full Stack Developer</b> focused on building scalable and user-centric web applications. During my <b>internship at InnoRize</b>, I worked extensively with the <b>MERN stack</b> and <b>Next.js</b>, contributing to backend development, user-facing features, and admin dashboards while collaborating with teams using <b>Git and GitHub</b>.
                   </p>
                   <p>
-                    Over the years, I’ve developed projects ranging from
-                    responsive dashboards to secure authentication systems,
-                    optimizing performance and user experience. I believe that
-                    great software should feel effortless — solving problems so
-                    intuitively that the technology fades into the background.
-                  </p>
-                  <p>
-                    Outside of development, I enjoy exploring new tech trends,
-                    taking part in hackathons, and constantly learning new
-                    skills to stay ahead in the fast-paced world of web
-                    development. I’m driven by the challenge of turning complex
-                    ideas into seamless, user-focused experiences.
+                    I enjoy solving real-world problems through clean system design, performance optimization, and measurable improvements such as achieving a 100 SEO score. Alongside full stack development, I’m actively exploring AI-powered features including text-to-speech and content moderation, while expanding my knowledge in Data Science, Machine Learning, NLP, and Generative AI. My goal is to combine strong software engineering fundamentals with intelligent, future-ready solutions.
                   </p>
                 </div>
               </div>
@@ -153,6 +133,7 @@ export default function AboutPage() {
                       <Badge variant="secondary">React.js</Badge>
                       <Badge variant="secondary">Next.js</Badge>
                       <Badge variant="secondary">Node.js</Badge>
+                      <Badge variant="secondary">Express.js</Badge>
                       <Badge variant="secondary">MongoDB</Badge>
                     </div>
                   </div>

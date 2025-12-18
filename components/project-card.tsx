@@ -58,12 +58,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.title}
         </h3>
         <p className="text-muted-foreground text-sm mb-6 line-clamp-2 leading-relaxed">{project.summary}</p>
-        <Button variant="ghost" size="sm" className="group/btn p-0 h-auto text-primary hover:text-primary/80" asChild>
+        {/* <Button variant="ghost" size="sm" className="group/btn p-0 h-auto text-primary hover:text-primary/80" asChild>
           <Link href={`/projects/${project.slug}`}>
             View Case Study
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
           </Link>
-        </Button>
+        </Button> */}
       </CardContent>
     </Card>
   )

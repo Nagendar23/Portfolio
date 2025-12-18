@@ -12,30 +12,33 @@ export const metadata: Metadata = {
 }
 
 const resumeData = {
-  lastUpdated: "2025-06-06",
+  lastUpdated: "2025-12-18",
   experience: [
-    {
-      title: "Full Stack Developer",
-      company: "Freelance / Personal Projects",
-      period: "2024 - Present",
-      description: "Developed and deployed responsive, scalable web applications using the MERN stack and Next.js.",
-      achievements: [
-        "Built responsive web apps with 30%+ performance improvements",
-        "Implemented secure JWT authentication supporting 100+ concurrent users",
-        "Deployed projects on Vercel, Netlify, and Render with CI/CD workflows",
-      ],
-    },
-    {
-      title: "Frontend Developer",
-      company: "College Projects & Hackathons",
-      period: "2023 - 2024",
-      description: "Designed and implemented modern, responsive UIs with React.js, Tailwind CSS, and JavaScript.",
-      achievements: [
-        "Won recognition for most user-friendly interface design in a college competition (2025)",
-        "Created reusable component libraries for faster project delivery",
-        "Mentored peers in React.js and full-stack development",
-      ],
-    },
+  {
+    title: "Full Stack Intern",
+    company: "InnoRize Enterprises",
+    period: "2025",
+    description:
+      "Worked on backend and frontend development using the MERN stack and Next.js, building user and admin modules, integrating REST APIs, improving SEO to a perfect score of 100, and collaborating with teams using Git and GitHub.",
+    achievements: [
+      "Developed scalable user and admin modules using MERN & Next.js",
+      "Optimized backend performance through structured REST API integrations",
+      "Achieved a 100/100 SEO score for production pages",
+      "Collaborated with cross-functional teams using Git and GitHub",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Personal Projects",
+    period: "2024 - Present",
+    description:
+      "Developed and deployed responsive, scalable web applications using the MERN stack and Next.js.",
+    achievements: [
+      "Built responsive web apps with 30%+ performance improvements",
+      "Implemented secure JWT authentication supporting 100+ concurrent users",
+      "Deployed projects on Vercel, Netlify, and Render with CI/CD workflows",
+    ],
+  },
   ],
   education: [
     {
@@ -54,15 +57,14 @@ const resumeData = {
       period: "Completed 2020",
     },
   ],
-  skills: [
-    "React.js", "Next.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", "Vite",
-    "Node.js", "Express.js", "RESTful API Design", "JWT Authentication", "API Integration",
-    "MongoDB", "SQL", "NoSQL", "Database Design", "Data Modeling", "CRUD Operations",
-    "Git", "GitHub", "Docker (Basics)", "CI/CD", "Vercel", "Netlify", "Render",
-    "Python", "Java (Basics)", "C (Basics)",
-    "Agile", "Scrum", "Test-Driven Development", "MVC Architecture",
-    "Problem-Solving", "Collaborative Teamwork", "Technical Communication", "Time Management"
-  ],
+  skills: {
+    Frontend: ["React.js", "Next.js", "Vite","WebRTC",  "HTML5", "CSS3", "JavaScript (ES6+)", "Tailwind CSS", "BootStrap" ],
+    Backend: ["Node.js", "Express.js", "RESTful API Design", "JWT Authentication", "API Integration", "WebSockets"],
+    Databases: ["MongoDB", "SQL", "NoSQL", "Database Design", "Data Modeling", "CRUD Operations"],
+    "DevOps & Tools": ["Git", "GitHub", "AWS" ,"Docker (Basics)", "CI/CD", "Vercel", "Netlify", "Render"],
+    "Programming Languages": ["Python","JavaScript", "Java (Basics)", "C (Basics)"],
+    "Soft Skills": ["Problem-Solving", "Collaborative Teamwork", "Technical Communication", "Time Management"],
+  },
 }
 
 export default function ResumePage() {
@@ -144,14 +146,21 @@ export default function ResumePage() {
             <CardHeader>
               <CardTitle>Skills</CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2">
-                {resumeData.skills.map((skill) => (
-                  <Badge key={skill} variant="secondary">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
+            <CardContent className="space-y-6">
+              {Object.entries(resumeData.skills).map(([category, skillList]) => (
+                <div key={category}>
+                  <h3 className="font-semibold text-sm text-muted-foreground mb-3 uppercase tracking-wide">
+                    {category}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skillList.map((skill) => (
+                      <Badge key={skill} variant="secondary">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </CardContent>
           </Card>
         </div>
