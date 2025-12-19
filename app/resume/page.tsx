@@ -77,13 +77,13 @@ export default function ResumePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/NAGENDAR_RESUME.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download PDF
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/NAGENDAR_RESUME.pdf" target="_blank" rel="noopener noreferrer">
                 <Eye className="mr-2 h-4 w-4" />
                 View Online
               </a>
