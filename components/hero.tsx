@@ -20,13 +20,9 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/5 to-transparent" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-20 animate-pulse-slow" />
-        <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl opacity-20 animate-pulse-slow"
-          style={{ animationDelay: "2s" }}
-        />
+
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/5 to-transparent pointer-events-none" />
       </div>
 
       <Container className="relative z-10">
@@ -59,7 +55,7 @@ export function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-balance leading-relaxed px-4 sm:px-0"
+              className="text-base sm:text-lg md:text-xl text-foreground font-medium max-w-3xl mx-auto text-balance leading-relaxed px-4 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}

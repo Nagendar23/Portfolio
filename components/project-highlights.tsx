@@ -100,12 +100,12 @@ export function ProjectHighlights() {
                 <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{project.summary}</p>
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{project.summary}</p>
                 <Button variant="ghost" size="sm" className="group/btn p-0 h-auto" asChild>
-                  <Link href={`/projects/${project.slug}`}>
+                  {/* <Link href={`/projects/${project.slug}`}>
                     View Case Study
                     <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
-                  </Link>
+                  </Link> */}
                 </Button>
               </CardContent>
             </Card>

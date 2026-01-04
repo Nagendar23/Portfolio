@@ -25,24 +25,11 @@ export function getProjects(): Project[] {
       tech: ["Next.js", "Node.js", "Express.js", "MongoDB", "JWT"],
       cover: "images/projects/campus-connect.png",
       repo: "https://github.com/Nagendar23/Campus-Connect",
+      url: "https://nagendar-campus-connect.vercel.app/",
       featured: true,
       date: "2025-09-28",
     },
-    {
-      slug: "airbnb-clone",
-      title: "Airbnb Clone",
-      summary: "Accommodation booking app with geolocation and maps API.",
-      description:
-        "A responsive Airbnb-like web application with JWT authentication, CRUD operations, RESTful APIs, geolocation, and maps integration. Improved performance by 40% through frontend and backend optimization.",
-      tags: ["web", "Backend", "Booking"],
-      tech: ["EJS", "Express.js", "MongoDB", "JWT", "Maps API"],
-      cover: "/images/projects/airBnb.png",      
-      repo: "https://github.com/Nagendar23/Air-Bnb",
-      url: "https://air-bnb-fnxw.onrender.com/listings",
-      featured: true,
-      date: "2025-04-25",
-    },
-    {
+        {
       slug: "VideoMeetZ",
       title: "VideoMeetZ",
       summary: "A MERN-based web app offering high-quality video conferencing with real-time WebRTC streaming, screen sharing, and seamless multi-user communication via WebSockets.",
@@ -52,9 +39,12 @@ export function getProjects(): Project[] {
       tech: ["React", "Express.js","Node.js", "MongoDB", "WebRTC","WebSockets"],
       cover: "/images/projects/VideoMeetz.png",
       repo: "https://github.com/Nagendar23/VideoConferenceApp/",
+      url: "https://videomeetz.vercel.app/",
       featured: true,
       date: "2024-09-10",
     },
+
+    
 
         {
       slug: "expense-tracker",
@@ -71,6 +61,21 @@ export function getProjects(): Project[] {
       featured: true,
       date: "2025-05-13",
     },
+    {
+      slug: "airbnb-clone",
+      title: "Airbnb Clone",
+      summary: "Accommodation booking app with geolocation and maps API.",
+      description:
+        "A responsive Airbnb-like web application with JWT authentication, CRUD operations, RESTful APIs, geolocation, and maps integration. Improved performance by 40% through frontend and backend optimization.",
+      tags: ["web", "Backend", "Booking"],
+      tech: ["EJS", "Express.js", "MongoDB", "JWT", "Maps API"],
+      cover: "/images/projects/airBnb.png",      
+      repo: "https://github.com/Nagendar23/Air-Bnb",
+      url: "https://air-bnb-fnxw.onrender.com/listings",
+      featured: false,
+      date: "2025-04-25",
+    },
+
         {
       slug: "notes-app",
       title: "Notes Application",

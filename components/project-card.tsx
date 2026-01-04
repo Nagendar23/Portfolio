@@ -57,7 +57,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="font-semibold text-xl mb-3 group-hover:text-primary transition-colors duration-300">
           {project.title}
         </h3>
-        <p className="text-muted-foreground text-sm mb-6 line-clamp-2 leading-relaxed">{project.summary}</p>
+        <p className="text-muted-foreground text-sm mb-6 line-clamp-3 leading-relaxed">{project.summary}</p>
         {/* <Button variant="ghost" size="sm" className="group/btn p-0 h-auto text-primary hover:text-primary/80" asChild>
           <Link href={`/projects/${project.slug}`}>
             View Case Study
