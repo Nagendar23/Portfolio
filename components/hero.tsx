@@ -92,7 +92,7 @@ export function Hero() {
                   className="glass-card hover:glass px-5 sm:px-6 py-3 sm:py-4 text-sm sm:text-base bg-transparent w-full sm:w-auto"
                   asChild
                 >
-                  <Link href="/NagendarRESUME (2).pdf">
+                  <Link href="/NagendarFullStack.pdf">
                     <Download className="mr-2 h-4 w-4" />
                     Download Resume
                   </Link>

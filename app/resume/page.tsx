@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 const resumeData = {
-  lastUpdated: "2025-01-09",
+  lastUpdated: "2026-02-11",
   experience: [
   {
     title: "Full Stack Intern",
@@ -58,9 +58,9 @@ const resumeData = {
     },
   ],
   skills: {
-    Frontend: ["React.js", "Next.js", "Vite","WebRTC",  "HTML5", "CSS3", "JavaScript (ES6+)", "Tailwind CSS", "BootStrap" ],
-    Backend: ["Node.js", "Express.js", "RESTful API Design", "JWT Authentication", "API Integration", "WebSockets"],
-    Databases: ["MongoDB", "SQL", "NoSQL", "Database Design", "Data Modeling", "CRUD Operations"],
+    Frontend: ["React.js", "Next.js", "Vite",  "HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "BootStrap" ],
+    Backend: ["Node.js", "Express.js", "RESTful API Design", "JWT Authentication", "API Integration", "WebSockets","WebRTC"],
+    Databases: ["MongoDB", "SQL", "Database Design", "Data Modeling", "CRUD Operations"],
     "DevOps & Tools": ["Git", "GitHub", "AWS" ,"Docker (Basics)", "CI/CD", "Vercel", "Netlify", "Render"],
     "Programming Languages": ["Python","JavaScript", "Java (Basics)", "C (Basics)"],
     "Soft Skills": ["Problem-Solving", "Collaborative Teamwork", "Technical Communication", "Time Management"],
@@ -77,13 +77,13 @@ export default function ResumePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" asChild>
-              <a href="/NagendarRESUME (2).pdf" download>
+              <a href="/NagendarFullStack.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download PDF
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="/NagendarRESUME (2).pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/NagendarFullStack.pdf" target="_blank" rel="noopener noreferrer">
                 <Eye className="mr-2 h-4 w-4" />
                 View Online
               </a>
